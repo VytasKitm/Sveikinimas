@@ -1,0 +1,587 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#578deb, #51dd7f);
+}
+
+.flower-1 {
+
+    &__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100vh;
+        bottom: 0px;
+        left: 15vw;
+
+    }
+
+    &__petals {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(181, 221, 73), rgb(198, 35, 35));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(45deg);
+            transform-origin: 80px 100px;
+        }
+    
+    
+        &--2 {
+            transform: rotate(90deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--3 {
+            transform: rotate(135deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--4 {
+            transform: rotate(180deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--5 {
+            transform: rotate(225deg);
+            transform-origin: 80px 95px;
+        }
+    
+        &--6 {
+            transform: rotate(270deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--7 {
+            transform: rotate(315deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--8 {
+            transform-origin: 80px 100px;
+        }
+
+    }
+
+    @keyframes bloom {
+        0% {
+            opacity: 0.1;
+            transform: scale(0.1);
+        }   
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__center {
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0;
+        top: 52vh;
+        left: 155px;
+        width: 50px;
+        height: 50px;
+        background-color:bisque;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+
+    &__stem {
+        position: absolute;
+        width: 18px;
+        height: 45vh;
+        background-color: green;
+        left: 165px;
+        bottom: 0;
+        // transform: scale(1, -1);
+        background: linear-gradient( rgb(181, 221, 73, 0.1) , rgb(6, 69, 2));
+        // animation-name: grow;
+        transform-origin: bottom left;
+        animation: grow 3s forwards;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes grow {
+        from {
+            transform: scaleY(0);
+        }
+        to {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        
+    }
+
+    &__leaf {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(66, 101, 70), rgb(2, 36, 15));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 2.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(130deg);
+            bottom: 200px;
+        }
+
+        &--2 {
+            transform: rotate(-40deg);
+            bottom: 250px;
+            left: -87px;
+        }
+    }
+
+
+}
+
+
+.flower-2 {
+
+    &__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100vh;
+        bottom: 0px;
+        left: 55vw;
+
+    }
+
+    &__petals {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        top: 30vh;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(181, 221, 73), rgb(198, 35, 35));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 5.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(45deg);
+            transform-origin: 80px 100px;
+        }
+    
+    
+        &--2 {
+            transform: rotate(90deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--3 {
+            transform: rotate(135deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--4 {
+            transform: rotate(180deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--5 {
+            transform: rotate(225deg);
+            transform-origin: 80px 95px;
+        }
+    
+        &--6 {
+            transform: rotate(270deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--7 {
+            transform: rotate(315deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--8 {
+            transform-origin: 80px 100px;
+        }
+
+    }
+
+    @keyframes bloom {
+        0% {
+            opacity: 0.1;
+            transform: scale(0.1);
+        }   
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__center {
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0;
+        top: 37vh;
+        left: 155px;
+        width: 50px;
+        height: 50px;
+        background-color:bisque;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 5.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+
+    &__stem {
+        position: absolute;
+        opacity: 0;
+        width: 18px;
+        height: 60vh;
+        background-color: green;
+        left: 165px;
+        bottom: 0;
+        // transform: scale(1, -1);
+        background: linear-gradient( rgb(181, 221, 73, 0.1) , rgb(6, 69, 2));
+        // animation-name: grow;
+        transform-origin: bottom left;
+        
+        animation: grow 3s forwards;
+        animation-delay: 3.5s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes grow {
+        from {
+            transform: scaleY(0);
+        }
+        to {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        
+    }
+
+    &__leaf {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(66, 101, 70), rgb(2, 36, 15));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 5.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(130deg);
+            bottom: 300px;
+        }
+
+        &--2 {
+            transform: rotate(-40deg);
+            bottom: 450px;
+            left: -87px;
+        }
+    }
+
+
+}
+
+.flower-3 {
+
+    &__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100vh;
+        bottom: 0px;
+        left: 70vw;
+
+    }
+
+    &__petals {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(181, 221, 73), rgb(198, 35, 35));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 4.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(45deg);
+            transform-origin: 80px 100px;
+        }
+    
+    
+        &--2 {
+            transform: rotate(90deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--3 {
+            transform: rotate(135deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--4 {
+            transform: rotate(180deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--5 {
+            transform: rotate(225deg);
+            transform-origin: 80px 95px;
+        }
+    
+        &--6 {
+            transform: rotate(270deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--7 {
+            transform: rotate(315deg);
+            transform-origin: 80px 100px;
+        }
+    
+        &--8 {
+            transform-origin: 80px 100px;
+        }
+
+    }
+
+    @keyframes bloom {
+        0% {
+            opacity: 0.1;
+            transform: scale(0.1);
+        }   
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__center {
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0;
+        top: 52vh;
+        left: 155px;
+        width: 50px;
+        height: 50px;
+        background-color:bisque;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 4.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+
+    &__stem {
+        position: absolute;
+        opacity: 0;
+        width: 18px;
+        height: 45vh;
+        background-color: green;
+        left: 165px;
+        bottom: 0;
+        background: linear-gradient( rgb(181, 221, 73, 0.1) , rgb(6, 69, 2));
+        transform-origin: bottom left;
+        animation-delay: 2s;   
+        animation-name: grow;
+        animation-duration: 3s;
+        // animation-direction: forwards;
+        animation-fill-mode: forwards;
+        // animation: grow 3s forwards;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes grow {
+        from {
+            transform: scaleY(0);
+        }
+        to {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+        
+    }
+
+    &__leaf {
+        position: absolute;
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 0 100%;
+        background: linear-gradient( rgb(66, 101, 70), rgb(2, 36, 15));
+        transform-origin: bottom center;
+        z-index: 1;
+        animation-name: bloom;
+        animation-delay: 4.5s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &--1 {
+            transform: rotate(130deg);
+            bottom: 200px;
+        }
+
+        &--2 {
+            transform: rotate(-40deg);
+            bottom: 250px;
+            left: -87px;
+        }
+    }
+}
+
+.sun {
+    position: absolute;
+    background-color: rgb(248, 248, 34);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 100px 20px rgba(255,221,0,1);
+    animation-name: sun_moving;
+    animation-duration: 13s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+    @keyframes sun_moving {
+        from {
+            top: 60vh;
+            left: 0vw;
+        }
+    
+        to {
+            top: 10vh;
+            left: 80vw;
+        }
+    }
+}
+
+.sveikinimas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    gap: 4rem;
+
+    &__raide {
+        font-size: 7rem;
+        color:beige;
+        animation-name: sveikinimas;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0;
+
+        &--S {
+            animation-delay: 5s;
+        }
+
+        &--V {
+            animation-delay: 5.5s;
+        }
+
+        &--E {
+            animation-delay: 6s;
+        }
+
+        &--I {
+            animation-delay: 6s;
+        }
+
+        &--K {
+            animation-delay: 5s;
+        }
+
+        &--I {
+            animation-delay: 5.5s;
+        }
+
+        &--N {
+            animation-delay: 6.5s;
+        }
+
+        &--U {
+            animation-delay: 6s;
+        }
+
+        &--Ex {
+            animation-delay: 5.5s;
+        }
+
+        @keyframes sveikinimas {
+            from {
+                transform: scaleX(0.1);
+            }
+
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
